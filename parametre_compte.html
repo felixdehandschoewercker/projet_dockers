@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Profil Utilisateur</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="sections.css">
+</head>
+<body>
+    <header>
+        <input type ="checkbox" name ="" id ="chk1">
+              <div  class="logo"><img src="media/logo.png" > </div>
+      
+                  <ul>
+                      <li><a href="acceuil.php">Accueil</a></li>
+                      <li><a href="#">Agenda des plongées</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li>
+                          <a href="#"><i class="fa fa-facebook"></i></a>
+                          <a href="#"><i class="fa fa-twitter"></i></a>
+                          <a href="#"><i class="fa fa-instagram"></i></a>
+                            
+                      </li>
+                  </ul>
+                  <details class="dd-dropdown">
+          <summary role="button">
+            <a class="dd-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account</title><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" /></svg></a>
+          </summary>
+          <ul>
+            <li><a href="#">Mon compte</a></li>
+            <li><a href="#">Parametres</a></li>
+            <li><a href="#">Deconnection</a></li>
+        </ul>
+      </details>
+      
+                  <div class="menu">
+                      <label for="chk1">
+                          <i class="fa fa-bars"></i>
+                      </label>
+                  </div>
+    </header>
+    <section id="hero">
+        <div class="layer">
+          <div class="hero-content">
+
+          </div>
+          
+        </section>
+    <div class="profile-container">
+        <h2>Profil Utilisateur</h2>
+        <form>
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" value="Nom Utilisateur" readonly>
+
+            <label for="prenom">Prenom:</label>
+            <input type="text" id="prenom" name="prenom" value="Prenom Utilisateur" readonly>
+
+            <label for="email">Mail:</label>
+            <input type="text" id="Mail" name="Mail" value="Votre Mail" readonly>
+            <label for="new-email">Moidifier le mail:</label>
+            <input type="text" id="new-Mail" name="new-Mail" value="Modifiez votre Mail" >
+
+            <label for="dob">Date de naissance:</label>
+            <input type="date" id="dob" name="dob" value="" readonly>
+            <label for="new-dob">Modifier Date de naissance:</label>
+            <input type="date" id="new-dob" name="new-dob" >
+
+            <label for="new-pwd">Modifier Le Mot de passe:</label>
+            <input type="password" id="new-pwd" name="pwd" value="new-motdepasse">
+            <label for="pwd">Mot de passe Actuel:</label>
+            <input type="password" id="pwd" name="pwd" value="motdepasse" readonly>
+        </form>
+        <br>
+        <a class="custom-button">enregistrer</a>
+    </div>
+    <br>
+</body>
+</html>

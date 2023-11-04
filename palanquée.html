@@ -1,0 +1,94 @@
+<?php 
+start_session();
+?>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Palanquée</title>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <?php include_once('header.php'); ?>
+      </ul>
+    </nav>
+  </header>
+  <section id="herooo">
+    <div class="hero-content">
+      <h1>FICHE DE SECURITE </h1>
+    </div>
+  </section>
+  <section>
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Site de plongée</th>
+                <th>Heure</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <p>Directeur de plongée: <input type="text" id="DP" name="DP"/> Qualification:<input type="text" id="Qualification" name="Qualification"/> </p>
+        <p>signature du DP: <input type="text"/> Nombre de plongeurs:<input type="text" id="Qualification" name="Qualification"/> </p>
+        <p>Surveillance de surface: <input type="text"></p>
+        <p>N° de tel du président: (+33) 6 00 00 00 00  N° de tel du responsable technique: (+33) 6 00 00 00 00 </p>
+  </section>
+  <section>
+        <br>
+        <br>
+        <p>Palanquée 1</p>
+        <table border="2" title="Palanquée 1">
+            <tr>
+                <th>plongeurs
+                    <p>Nom</p>
+                </th>
+                <th>Fonction</th>
+                <th>Niveau</th>
+                <th>Tech Exploration</th>
+                <th>Nitrox(%)</th>
+                <th colspan="2">parametres
+                    <p>prevu realises</p>
+                </th>
+                <th>paliers</th>
+            </tr>
+            <tr><td><input type="<?php echo('' . $_SESSION['nom'] . ' ' . $_SESSION['prenom']. '') "></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+            <tr><td><input type="text" ></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+            <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td colspan="2"><input type="text"></td><td><input type="text" placeholder></td></tr>
+            <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+        </table>
+        <br>
+        <br>
+        <p>Palanquée 2</p>
+        
+  </section>
+
+  <section id="services">
+    <h2>Nos Services</h2>
+    <div class="service-card">
+      <a href="site de plongée.html"><img src="https://littoralenpartage.files.wordpress.com/2021/11/a56-080214leportelequihen090.jpeg?w=1024" alt="Plongée guidée"></a>
+      <h3>site de plongée guidée</h3>
+      <p>Découvrez les sites de plongée les plus incroyables en compagnie de nos guides experts.</p>
+    </div>
+    <div class="service-card">
+      <a href="https://www.youtube.com/watch?v=n6gaRzqLW64&ab_channel=Universit%C3%A9dePauetdesPaysdel%27Adour"></li><img src="https://contents.mediadecathlon.com/p1434157/k$7e5f7b0429ec81f7b2416f3dbcecbdcf/1800x0/250pt150/500xcr300/bienfaits-plongee-sous-marine-decouverte-subea-decathlon.jpg?format=auto" alt="Cours de plongée"></a>
+      <h3>Cours de Plongée</h3>
+      <p>Apprenez à plonger ou améliorez vos compétences avec nos instructeurs qualifiés.</p>
+    </div>
+    <div class="service-card">
+      <img src="https://www.fadis-diving.net/ressources/common/equipement04.jpg" alt="Location d'équipement">
+      <h3>Équipement de plongée</h3>
+      <p>Profitez de notre équipement de plongée de haute qualité en le louant à des tarifs abordables.</p>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2023 Site de Plongée | Tous droits réservés</p>
+  </footer>
+</body>
+</html>
